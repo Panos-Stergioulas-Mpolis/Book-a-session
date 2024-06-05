@@ -1,0 +1,18 @@
+$bg-color: rgb(53, 45, 56);
+$grey-bg-color: rgb(75, 69, 80);
+$dark-bg-color: rgb(54, 36, 72);
+$light-bg-color: rgb(96, 71, 122);
+$basic-text-color: rgb(243, 231, 255);
+$seccond-text-color: rgb(223, 168, 255);
+$buttons-bg: rgb(211, 137, 253);
+$back-drop-color: rgba(0, 0, 0, 0.724);
+$family: "Montserrat";
+$button-hover: darken($buttons-bg, 20);
+$small-radius: 0.3rem;
+$margin-from-nav: 150px;
+
+@mixin min-width($width){
+    @media (min-width: $width) {
+        @content;
+    }
+}

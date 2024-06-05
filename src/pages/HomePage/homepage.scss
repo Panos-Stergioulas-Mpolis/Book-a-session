@@ -1,0 +1,42 @@
+.home-page{
+    margin: $margin-from-nav auto 2rem auto;
+    width: 80%;
+    max-width: 940px;
+
+    .home-page-title{
+        color: $basic-text-color;
+    }
+
+    .home-page-items{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        
+        .home-page-item{
+            margin-top: 3rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: $basic-text-color;
+
+            @include min-width(560px){
+                flex-direction: row;
+            }
+    
+            img{
+                width: 10rem;
+                height: 10rem;
+                border-radius: 100%;
+            }
+
+            div{
+                padding: 0 3rem;
+            }
+
+            h3{
+                color: $seccond-text-color;
+            }
+        }
+    }
+    
+}

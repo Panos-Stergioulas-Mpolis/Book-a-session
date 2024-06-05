@@ -1,0 +1,34 @@
+.booked-session{
+    width: 100%;
+    background-color: $bg-color;
+    padding: 0.5rem;
+    border-radius: $small-radius;
+    position: relative;
+    font-size: 0.7rem;
+
+    .booked-session-title{
+        color: $seccond-text-color
+    }
+
+    .booked-session-summary{
+        color: $basic-text-color;
+    }
+
+    .booked-session-date{
+        color: grayscale($basic-text-color)
+    }
+
+    .cansel-session-button{
+        position: absolute;
+        top: 10%;
+        right: 2%;
+        background-color: transparent;
+        border: none;
+        font-size: 1rem;
+        color: $seccond-text-color;
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}

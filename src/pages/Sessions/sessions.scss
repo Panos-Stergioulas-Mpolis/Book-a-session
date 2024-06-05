@@ -1,0 +1,37 @@
+.sessions-page{
+    margin: auto;
+    margin-top: $margin-from-nav;
+    padding: 0 0.5rem;
+    text-align: center;
+    width: 80%;
+    max-width: 1200px;
+    
+
+    .sessions-page-title{
+        color: $seccond-text-color;
+    }
+
+    .sessions-page-paragraph{
+        color: grayscale($basic-text-color)
+    }
+
+    .sessions-preview-container{
+        border-radius: $small-radius;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    @include min-width(600px){
+        text-align: start;
+
+        .sessions-preview-container{
+            flex-direction: row;
+            flex-wrap: wrap;
+            background-color: $grey-bg-color;
+            padding: 0.5rem 0.2rem;
+            margin-bottom: 1rem;
+        }
+    }
+
+}

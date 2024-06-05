@@ -1,0 +1,53 @@
+.session-preview{
+    width: 100%;
+    max-width: 350px;
+    height: 320px;
+    margin: auto;
+    border-radius: $small-radius;
+    overflow: hidden;
+    background-color: $dark-bg-color;
+    text-align: start;
+    position: relative;
+    font-size: smaller;
+
+    .preview-image-container{
+        width: 100%;
+        overflow: hidden;
+        max-height: 200px;
+    }
+
+    .preview-image{
+        width: 100%;
+    }
+
+    .preview-info{
+        padding: 0 0.6rem 2rem 0.6rem;
+
+        .preview-title{
+            margin: 0.5rem 0 0 0;
+            color: $seccond-text-color;
+        }
+
+        .preview-summary{
+            color: $basic-text-color;
+        }
+    }
+
+    .learn-more-button{
+        position: absolute;
+        right: 2%;
+        bottom: 2%;
+        padding: 0.4rem;
+        background-color: $buttons-bg;
+        border-radius: $small-radius;
+        font-size: medium;
+        text-decoration: none;
+        font-weight: bold;
+    
+        &:hover{
+            background-color: $button-hover;
+            cursor: pointer;
+        }
+    }
+
+}

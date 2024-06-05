@@ -1,0 +1,80 @@
+.book-modal-section{
+    background: $light-bg-color;
+    position: fixed;
+    float: left;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 150;
+    width: 360px;
+    height: 270px;
+    border-radius: $small-radius;
+    padding: 1rem;
+
+    .book-title{
+        color: $basic-text-color;
+    }
+
+    .book-form{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .input-fields{
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+
+        label{
+            color: grayscale($seccond-text-color);
+            font-weight: bold;
+        }
+
+        input{
+            padding: 0.2rem;
+            font-size: 1.1rem;
+            border-radius: $small-radius;
+            border: none;
+        }
+    }
+
+    .book-buttons{
+        position: absolute;
+        right: 3%;
+        bottom: 3%;
+        border: none;
+    }
+
+    .submit-book-button{
+        padding: 0.4rem;
+        margin-left: 0.4rem;
+        background-color: $buttons-bg;
+        border: none;
+        border-radius: $small-radius;
+        font-size: 1rem;
+
+        &:hover{
+            background-color: $button-hover;
+            cursor: pointer;
+        }
+    }
+
+    .cancel-book-button{
+        background:transparent;
+        font-size: 1rem;
+        border: none;
+        color: $seccond-text-color;
+
+        &:hover{
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    }
+
+
+    @include min-width(600px){
+        width: 500px;
+        height: 270px;
+    }
+}
