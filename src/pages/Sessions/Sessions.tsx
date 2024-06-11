@@ -1,5 +1,5 @@
 import SessionPreview from "../../components/SessionsPreview/SessionPreview";
-import { SESSIONS } from "../../dummy-sessions";
+import { SESSIONS } from "../../constants/dummy-sessions";
 import "./sessions.scss"
 
 

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./sessionoverview.scss"
 import BookModal from "../../components/BookModal/BookModal";
-import { SESSIONS } from "../../dummy-sessions";
+import { SESSIONS } from "../../constants/dummy-sessions";
 import { useParams } from "react-router-dom";
 import ErrorPage from "../ErrorPage/ErrorPage";
 
